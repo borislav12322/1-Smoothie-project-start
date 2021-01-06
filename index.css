@@ -49,6 +49,9 @@ ul.menu li{
 
 
 /* About */
+ul.structure{
+    list-style-image: url(./assets/img/About/icon_for_list.png);
+}
 
 
 /* Products */
