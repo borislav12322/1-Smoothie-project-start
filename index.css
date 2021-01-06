@@ -21,6 +21,28 @@ a {
 
 
 /* Header */
+    /*.header-top{
+    background-image: url(/assets/img/backgrounds/header-bg-img.png);*/
+
+ul.menu{
+    list-style-type: none;
+    margin: 0;
+    padding: 4px;
+    float: left;
+}
+
+ul.menu li{
+    display: inline;
+    margin-right: 5px;
+    padding: 3px;
+
+}
+
+.header-logo{
+    text-align: center;
+    margin: 69px 859px 939px 850px;
+    
+}
 
 
 /* Smoothies */
