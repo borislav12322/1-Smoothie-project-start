@@ -1,8 +1,9 @@
 /* Здесь подключаем шрифты, используя правило @font-face*/
 @font-face {
-    font-family: MuliRegular; 
-    src: url(./assets/fonts/Muli-Regular.woff); 
+    font-family: MuliRegular;
+    src: url(./assets/fonts/Muli-Regular.woff);
 }
+
 /*И повторяем этот кусок кода изменяя имя шрифта и путь к файлу*/
 
 
@@ -21,27 +22,27 @@ a {
 
 
 /* Header */
-    /*.header-top{
+/*.header-top{
     background-image: url(/assets/img/backgrounds/header-bg-img.png);*/
 
-ul.menu{
+ul.menu {
     list-style-type: none;
     margin: 0;
     padding: 4px;
     float: left;
 }
 
-ul.menu li{
+ul.menu li {
     display: inline;
     margin-right: 5px;
     padding: 3px;
 
 }
 
-.header-logo{
+.header-logo {
     text-align: center;
     margin: 69px 859px 939px 850px;
-    
+
 }
 
 
@@ -49,7 +50,7 @@ ul.menu li{
 
 
 /* About */
-ul.structure{
+ul.structure {
     list-style-image: url(./assets/img/About/icon_for_list.png);
 }
 
@@ -74,8 +75,3 @@ ul.structure{
 
 
 /* Здесь будут медиа запросы */
-
-
-
-
-
