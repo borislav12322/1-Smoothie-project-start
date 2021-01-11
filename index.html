@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./normalize and reset/normalize.css">
     <link rel="stylesheet" href="index.css">
     <!-- Сюда подключаем стили -->
 
@@ -15,9 +16,9 @@
 
     <!-- Header-->
 
-    <header class="header-top">
-        <nav>
-            <ul class="menu">
+    <header class="header__top">
+        <nav class="header__menu menu">
+            <ul class="menu__list">
                 <li><a href="">Shop</a></li>
                 <li><a href="">Home</a></li>
                 <li><a href="">Story</a></li>
@@ -27,21 +28,23 @@
             </ul>
         </nav>
 
-        <div class="header-logo">
-            <img src="./assets/img/logo/Logo.png" alt="logo">
+        <div class="header__logo logo">
+            <a href="logo__link">
+                <img class="logo__img" src="./assets/img/logo/Logo.png" alt="logo">
+            </a>
         </div>
 
-        <div class="personal">
-            <ul>
-                <li><a href="#"><img src="#" alt=""></a></li>
+        <div class="header__personal personal">
+            <ul class="personal__list">
+                <li class="personal__list-item"><a href="#"><img src="#" alt=""></a></li>
                 <li><a href="#"><img src="#" alt=""></a></li>
                 <li><a href="#"><img src="#" alt=""></a></li>
             </ul>
         </div>
 
-        <div class="social">
-            <ul>
-                <li><a href="#"><img src="#" alt=""></a></li>
+        <div class="header__social social">
+            <ul class="social__list">
+                <li class="social"><a href="#"><img src="#" alt=""></a></li>
                 <li><a href="#"><img src="#" alt=""></a></li>
                 <li><a href="#"><img src="#" alt=""></a><span>3</span>
                 </li>
@@ -50,71 +53,68 @@
         </div>
 
         <div class="header-content">
-            <form action="#">
-                <button>Shop now</button>
-            </form>
+            <button class="btn header__btn btn--green">Shop now</button>
         </div>
     </header>
 
     <!--What are the smoothies?-->
 
     <section class="smoothies">
-        <div class="smoothie_text">
-            <h2>What are the smoothies?</h2>
-            <p class="description_of_smoothies">A smoothie is a drink made from pureed raw fruit, vegetables, and
-                sometimes dairy
-                products (milk, yogurt, ice-cream or cottage cheese), typically using a blender. Smoothies may be made
-                using other ingredients, such as water, crushed ice, fruit juice, sweeteners (e.g. honey, sugar, stevia,
-                or syrup), whey powder, plant milk, nuts, nut butter, seeds, tea, chocolate, herbal supplements, or
-                nutritional supplements.
-            </p>
-        </div>
+
+        <h2>What are the smoothies?</h2>
+        <p class="description_of_smoothies">A smoothie is a drink made from pureed raw fruit, vegetables, and
+            sometimes dairy
+            products (milk, yogurt, ice-cream or cottage cheese), typically using a blender. Smoothies may be made
+            using other ingredients, such as water, crushed ice, fruit juice, sweeteners (e.g. honey, sugar, stevia,
+            or syrup), whey powder, plant milk, nuts, nut butter, seeds, tea, chocolate, herbal supplements, or
+            nutritional supplements.
+        </p>
         <div>
-            <img src="#" alt="plant"><span>Plant Based</span>
-            <img src="#" alt="Vegetables"><span>Vegan</span>
-            <img src="#" alt="beet"><span>Paleo</span>
-            <img src="#" alt="Gluten-Free"><span>Gluten-Free</span>
-            <img src="#" alt="Corn"><span>Corn-Free</span>
-            <img src="#" alt="Soy"><span>Soy-Free</span>
-            <img src="#" alt="Ayurvedic"><span>Ayurvedic</span>
-            <img src="#" alt="Heart"><span>Made With Love</span>
+            <div><img src="#" alt="plant"><span>Plant Based</span></div>
+            <div><img src="#" alt="Vegetables"><span>Vegan</span></div>
+            <div><img src="#" alt="beet"><span>Paleo</span></div>
+            <div><img src="#" alt="Gluten-Free"><span>Gluten-Free</span></div>
+            <div><img src="#" alt="Corn"><span>Corn-Free</span></div>
+            <div><img src="#" alt="Soy"><span>Soy-Free</span></div>
+            <div><img src="#" alt="Ayurvedic"><span>Ayurvedic</span></div>
+            <div><img src="#" alt="Heart"><span>Made With Love</span></div>
         </div>
     </section>
 
     <!--About-->
 
     <section class="about">
-        <figure><img src="#" alt="two bottles with smoothie"></figure>
-        <h2>What makes Smoothie an awesome drink? </h2>
-        <ul class="structure">
-            <li>Crunchy Puffs Texture</li>
-            <li>100 Calories per drink</li>
-            <li>4g Plant Protein</li>
-            <li>Good source of Magnesium & Vitamin B6</li>
-            <li>No Sugar in our Savory Flavors</li>
-            <li>Non-GMO, Vegan & Paleo</li>
-            <li>Gluten-Free & Grain-Free</li>
-            <li>Corn-Free & Soy-Free</li>
-        </ul>
-        <div class="button_shop_now">
-            <button>Shop Now</button>
+        <img src="#" alt="two bottles with smoothie">
+        <div>
+            <h2>What makes Smoothie an awesome drink? </h2>
+            <ul class="structure">
+                <li>Crunchy Puffs Texture</li>
+                <li>100 Calories per drink</li>
+                <li>4g Plant Protein</li>
+                <li>Good source of Magnesium & Vitamin B6</li>
+                <li>No Sugar in our Savory Flavors</li>
+                <li>Non-GMO, Vegan & Paleo</li>
+                <li>Gluten-Free & Grain-Free</li>
+                <li>Corn-Free & Soy-Free</li>
+            </ul>
         </div>
+        <button>About Organic Smoothie</button>
     </section>
 
     <!--Products-->
 
     <section class="products">
         <div class="item_1"><img src="#" alt="#">
-            <h2>Dark Chocolate Smoothie</h2><span>100 ml</span><button>Buy</button>
+            <h3>Dark Chocolate Smoothie</h3><span>100 ml</span><button>Buy <img src="#" alt="#"></button>
         </div>
         <div class="item_2"><img src="#" alt="#">
-            <h2>Vegan Lettuce Smoothie</h2><span>100 ml</span><button>Buy</button>
+            <h3>Vegan Lettuce Smoothie</h3><span>100 ml</span><button>Buy <img src="#" alt="#"></button>
         </div>
         <div class="item_3"><img src="#" alt="#">
-            <h2>Lemon Ginger Smoothie</h2><span>100 ml</span><button>Buy</button>
+            <h3>Lemon Ginger Smoothie</h3><span>100 ml</span><button>Buy <img src="#" alt="#"></button>
         </div>
         <div class="item_4"><img src="#" alt="#">
-            <h2>Turmeric Garlic Smoothie</h2><span>100 ml</span><button>Buy</button>
+            <h3>Turmeric Garlic Smoothie</h3><span>100 ml</span><button>Buy <img src="#" alt="#"></button>
         </div>
     </section>
 
@@ -123,9 +123,12 @@
     <section class="our_story">
         <div class="story_text">
             <h2>Our story</h2>
-            <span></span><button></button>
+            <span>As products typically using raw fruits or vegetables, smoothies include dietary fiber (e.g. pulp,
+                skin, and seeds) and so are thicker than fruit juice, often with a consistency similar to a milkshake.
+            </span>
+            <button>Who we are <img src="#" alt="#"></button>
         </div>
-        <div class="story_img"><img src="#" alt="#"><img src="#" alt="#"></div>
+        <img src="#" alt="#">
     </section>
 
     <!--Testimonials-->
@@ -137,53 +140,54 @@
                 make use of Smoothie! Smoothie saved my business.”</q><img src="#" alt="#">
             <cite>- from Santa Monica, CA</cite>
         </div>
-        <form class="testimonials_button"><button><img src="#" alt="#"></button><button><img src="#" alt="#"></button>
-        </form>
+        <div>
+            <button><img src="#" alt="#"></button>
+            <button><img src="#" alt="#"></button>
+        </div>
     </section>
 
     <!--Our blog-->
 
     <section class="our_blog">
         <h2>Our blog</h2>
-        <div class="blog_info">
-            <figure class="blog_img">
-                <img src="#" alt="#">
-                <div class="blog_text">
-                    <h3>ASAFOETIDA - THE NEXT TURMERIC?</h3>
-                    <date>Jun 16, 2020</date>
-                    <form action="#"><button>Read more</button></form>
-                    <figure><img src="#" alt="#"></figure>
-                    <footer><a href="#"><img src="#" alt="#"></a></footer>
-                </div>
-            </figure>
+        <div>
+            <img src="#" alt="#">
+            <article class="blog_text">
+                <h3>ASAFOETIDA - THE NEXT TURMERIC?</h3>
+                <time>Jun 16, 2020</time>
+                <p>If the fruit ingredients and the green vegetable ingredients are both juiced ahead of time, the mixed
+                    juice doesn't even have to be blended like a smoothie, i.e. a green juice or anything...</p>
+                <a>Read more<img src="#" alt="#"></a>
+            </article>>
         </div>
     </section>
 
     <!--Instagram-->
 
     <section class="inst">
-        <figure>
+        <div><a href="#"><img src="#" alt="#"></a></div>
+        <div>
             <a href="#"><img src="#" alt="#"></a>
-        </figure>
-        <figure>
+        </div>
+        <div>
             <a href="#"><img src="#" alt="#"></a>
-        </figure>
-        <figure>
+        </div>
+        <div>
             <a href="#"><img src="#" alt="#"></a>
-        </figure>
-        <figure>
+        </div>
+        <div>
             <a href="#"><img src="#" alt="#"></a>
-        </figure>
-        <figure>
+        </div>
+        <div>
             <a href="#"><img src="#" alt="#"></a>
-        </figure>
+        </div>
     </section>
 
     <!--Footer-->
 
     <footer>
         <div>
-            <figure class="footer_logo"><img src="#" alt="#"></figure>
+            <img src="#" alt="#">
             <nav class="info_menu">
                 <h4>Information</h4>
                 <ul>
@@ -213,9 +217,9 @@
                 <form><input type="email" placeholder="Subscribe to our newsletter"></form>
                 <span>Follow us</span>
                 <div class="icons_of_social_networks">
-                <a href=""><img src="#" alt="#"></a>
-                <a href=""><img src="#" alt="#"></a>
-                <a href=""><img src="#" alt="#"></a>
+                    <a href=""><img src="#" alt="#"></a>
+                    <a href=""><img src="#" alt="#"></a>
+                    <a href=""><img src="#" alt="#"></a>
                 </div>
             </div>
 
@@ -223,8 +227,10 @@
 
         <div class="footer_info">
             <span>© 2020. All Rights Reserved.</span>
-            <a href=""><img src="#" alt="#"></a>
-            <span>Go Top</span>
+            <div>
+                <span>Go Top</span>
+                <button><img src="#" alt="#"></button>
+            </div>
         </div>
     </footer>
 </body>
