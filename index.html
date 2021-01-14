@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./normalize and reset/normalize.css">
+    <link rel="stylesheet" href="./normalize_and_reset/normalize.css">
     <link rel="stylesheet" href="index.css">
     <!-- Сюда подключаем стили -->
 
@@ -16,44 +16,70 @@
 
     <!-- Header-->
 
-    <header class="header__top">
-        <nav class="header__menu menu">
-            <ul class="menu__list">
-                <li><a href="">Shop</a></li>
-                <li><a href="">Home</a></li>
-                <li><a href="">Story</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Blog</a></li>
-                <li><a href="">Testimonials</a></li>
-            </ul>
-        </nav>
+    <header class="header">
+        <div>
+            <nav class="header__menu menu">
+                <ul class="menu__list">
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">Shop</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">Home</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" >Story</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#">About</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">Blog</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">Testimonials</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
 
         <div class="header__logo logo">
-            <a href="logo__link">
-                <img class="logo__img" src="./assets/img/logo/Logo.png" alt="logo">
+            <a href="#" class="logo__link">
+                <img src="./assets/img/logo/Logo.png" alt="logo" class="logo__img">
             </a>
         </div>
 
         <div class="header__personal personal">
             <ul class="personal__list">
-                <li class="personal__list-item"><a href="#"><img src="#" alt=""></a></li>
-                <li><a href="#"><img src="#" alt=""></a></li>
-                <li><a href="#"><img src="#" alt=""></a></li>
+                <li class="personal__list-item">
+                    <a href="#" class="personal__link">
+                        <img src="#" alt="" class="personal__icon-search">
+                    </a>
+                </li>
+                <li class="personal__list-item">
+                    <a href="#" class="personal__link">
+                        <img src="#" alt="" class="personal__icon-user">
+                    </a>
+                </li>
+                <li class="personal__list-item">
+                    <a href="#" class="personal__link"
+                    ><img src="#" alt="" class="personal__icon-cart">
+                    <span class="personal__products-count">3</span>
+                </a>
+            </li>
             </ul>
         </div>
 
         <div class="header__social social">
             <ul class="social__list">
-                <li class="social"><a href="#"><img src="#" alt=""></a></li>
+                <li class="social__list-item"><a href="#" class="social__link"><img src="#" alt="" class="social__icon-facebook"></a></li>
                 <li><a href="#"><img src="#" alt=""></a></li>
-                <li><a href="#"><img src="#" alt=""></a><span>3</span>
-                </li>
+                <li><a href="#"><img src="#" alt=""></a></li>
 
             </ul>
         </div>
 
-        <div class="header-content">
-            <button class="btn header__btn btn--green">Shop now</button>
+        <div class="header__content">
+            <button class="header__btn btn btn--green">Shop now<img src="#" alt="" class="btn__arrow-yellow"></button>
         </div>
     </header>
 
@@ -151,9 +177,10 @@
             <img src="#" alt="#">
             <article class="blog_text">
                 <h3>ASAFOETIDA - THE NEXT TURMERIC?</h3>
-                <time>Jun 16, 2020</time>
+                    <time>Jun 16, 2020</time>
                 <p>If the fruit ingredients and the green vegetable ingredients are both juiced ahead of time, the mixed
                     juice doesn't even have to be blended like a smoothie, i.e. a green juice or anything...</p>
+                    <!--Куда запихать Read More-->
                 <a href="#">Read more<img src="#" alt="#"></a>
             </article>
         </div>
@@ -165,20 +192,9 @@
             <a href=""><img src="#" alt="">ashasuperfoods</a>
         <div>
             <a href="#"><img src="#" alt="#"></a>
-        </div>
-        <div>
             <a href="#"><img src="#" alt="#"></a>
-        </div>
-        <div>
             <a href="#"><img src="#" alt="#"></a>
-        </div>
-        <div>
             <a href="#"><img src="#" alt="#"></a>
-        </div>
-        <div>
-            <a href="#"><img src="#" alt="#"></a>
-        </div>
-        <div>
             <a href="#"><img src="#" alt="#"></a>
         </div>
     </section>
