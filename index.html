@@ -87,7 +87,9 @@
 
     <section class="smoothies">
         <h2 class="title title--orange">What are the smoothies?</h2>
-        <p class="text text--dark">A smoothie is a drink made from pureed raw fruit, vegetables, and
+        <!--Что написать в модификатор? Блок или элемент?-->
+                            <!--👇-->
+        <p class="smoothies__text text text--dark">A smoothie is a drink made from pureed raw fruit, vegetables, and
             sometimes dairy products (milk, yogurt, ice-cream or cottage cheese), typically using a blender. Smoothies may be made
             using other ingredients, such as water, crushed ice, fruit juice, sweeteners (e.g. honey, sugar, stevia,
             or syrup), whey powder, plant milk, nuts, nut butter, seeds, tea, chocolate, herbal supplements, or
@@ -140,19 +142,38 @@
     <section class="about">
         <img src="#" alt="two bottles with smoothie" class="about__img">
         <div>
-            <h2 class="title title--white">What makes Smoothie an <span class="title--green">awesome drink?</span></h2>
-            <ul class="about__list">
-                <li><span>Crunchy</span> Puffs Texture</li>
-                <li><span>100 Calories</span> per drink</li>
-                <li>4g Plant Protein</li>
-                <li>Good source of <span>Magnesium & Vitamin B6</span></li>
-                <li><span>No Sugar in our Savory Flavors</span></li>
-                <li>Non-GMO, Vegan & Paleo</li>
-                <li><span>Gluten-Free & Grain-Free</span></li>
-                <li>Corn-Free & Soy-Free</li>
+            <h2 class="about__title title title--white">What makes Smoothie an <span class="title--green">awesome drink?</span></h2>
+            <!--Можно создать этот список как блок, так как у нас в докумете присутствуют другие списки-->
+                            <!--👇-->
+            <ul class="about__list"> <!--<ul class="about_list list>"-->
+                <li class="about__item">
+                    <span class="about__text">Crunchy</span>Puffs Texture
+                </li>
+                <li class="about_item">
+                    <span class="about__text">100 Calories</span>per drink
+                </li>
+                <li class="about_item">
+                    4g Plant Protein
+                </li>
+                <li class="about_item">
+                    Good source of <span class="about__text">Magnesium & Vitamin B6</span>
+                </li>
+                <li class="about_item">
+                    <span class="about__text">No Sugar</span> in our Savory Flavors
+                </li>
+                <li class="about_item">
+                    <span class="about__text">Non-GMO, Vegan & Paleo</span>
+                </li>
+                <li class="about_item">
+                    <span class="about__text">Gluten-Free & Grain-Free</span>
+                </li>
+                <li class="about_item">
+                    <span class="about__text">Corn-Free & Soy-Free</span>
+                </li>
             </ul>
+
         </div>
-        <button>About Organic Smoothie<img src="#" alt="#"></button>
+        <button class="about__btn btn btn--transparent">About Organic Smoothie<img src="#" alt="#" class="btn__arrow-orange"></button>
     </section>
 
     <!--Products-->
