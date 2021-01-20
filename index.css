@@ -9,6 +9,7 @@
 
 
 /* Общие стили */
+
 html,
 body {
     margin: 0;
@@ -22,37 +23,55 @@ a {
 
 
 /* Header */
-/*.header-top{
-    background-image: url(/assets/img/backgrounds/header-bg-img.png);*/
+.header {
+    border: 1px solid red;
+    background-image: url(./assets/img/header/header-bg-img.png);
+    background-position: center;
+    background-size: cover;
+}
 
-ul.menu {
+.header__top {
+    border: 1px solid red;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu__list {
+    display: flex;
+    justify-self: space-between;
+    border: 1px solid red;
     list-style-type: none;
-    margin: 0;
-    padding: 4px;
-    float: left;
 }
 
-ul.menu li {
-    display: inline;
-    margin-right: 5px;
-    padding: 3px;
-
+.header__logo{
 }
 
-.header-logo {
-    text-align: center;
-    margin: 69px 859px 939px 850px;
-
+.personal__list {
+    border: 1px solid red;
+    display: flex;
+    justify-self: space-between;
+    list-style-type: none;
 }
+
+.social__list {
+    border: 1px solid red;
+    display: flex;
+    list-style-type: none;
+}
+
+.header__content {
+    border: 1px solid red;
+    display: flex;
+    justify-content: center;
+}
+
 
 
 /* Smoothies */
 
 
 /* About */
-ul.structure {
-    list-style-image: url(./assets/img/About/icon_for_list.png);
-}
+
 
 
 /* Products */

@@ -17,20 +17,20 @@
     <!-- Header-->
 
     <header class="header">
-        <div>
+        <div class="header__top">
             <nav class="header__menu menu">
                 <ul class="menu__list">
-                    <li class="menu__item">
-                        <a href="#" class="menu__link">Shop</a>
-                    </li>
                     <li class="menu__item">
                         <a href="#" class="menu__link">Home</a>
                     </li>
                     <li class="menu__item">
-                        <a href="#">Story</a>
+                        <a href="#" class="menu__link">Shop</a>
                     </li>
                     <li class="menu__item">
-                        <a href="#">About</a>
+                        <a href="#" class="menu__link">Story</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">About</a>
                     </li>
                     <li class="menu__item">
                         <a href="#" class="menu__link">Blog</a>
@@ -40,46 +40,50 @@
                     </li>
                 </ul>
             </nav>
-        </div>
 
-        <div class="header__logo logo">
-            <a href="#" class="logo__link">
-                <img src="./assets/img/logo/Logo.png" alt="logo" class="logo__img">
-            </a>
-        </div>
 
-        <div class="header__personal personal">
-            <ul class="personal__list">
-                <li class="personal__list-item">
-                    <a href="#" class="personal__link">
-                        <img src="#" alt="" class="personal__icon-search">
-                    </a>
-                </li>
-                <li class="personal__list-item">
-                    <a href="#" class="personal__link">
-                        <img src="#" alt="" class="personal__icon-user">
-                    </a>
-                </li>
-                <li class="personal__list-item">
-                    <a href="#" class="personal__link"><img src="#" alt="" class="personal__icon-cart">
-                        <span class="personal__products-count">3</span>
-                    </a>
-                </li>
-            </ul>
-        </div>
+            <div class="header__logo logo">
+                <a href="#" class="logo__link">
+                    <img src="./assets/img/header/logo.png" alt="logo" class="logo__img">
+                </a>
+            </div>
 
-        <div class="header__social social">
-            <ul class="social__list">
-                <li class="social__list-item"><a href="#" class="social__link"><img src="#" alt=""
-                            class="social__icon-facebook"></a></li>
-                <li><a href="#"><img src="#" alt=""></a></li>
-                <li><a href="#"><img src="#" alt=""></a></li>
+            <div class="header__personal personal">
+                <ul class="personal__list">
+                    <li class="personal__list-item">
+                        <a href="#" class="personal__link">
+                            <img src="./assets/img/header/search-icon.png" alt="" class="personal__icon-search">
+                        </a>
+                    </li>
+                    <li class="personal__list-item">
+                        <a href="#" class="personal__link">
+                            <img src="./assets/img/header/user-icon.png" alt="" class="personal__icon-user">
+                        </a>
+                    </li>
+                    <li class="personal__list-item">
+                        <a href="" class="personal__link">
+                            <img src="./assets/img/header/cart-icon.png" alt="" class="personal__icon-cart">
+                            <span class="personal__products-count">3</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
 
-            </ul>
+            <div class="header__social social">
+                <ul class="social__list">
+                    <li class="social__list-item"><a href="#" class="social__link"><img
+                                src="./assets/img/header/facebook-icon.png" alt="" class="social__icon-facebook"></a>
+                    </li>
+                    <li><a href="#"><img src="./assets/img/header/pinterest-icon.png" alt=""></a></li>
+                    <li><a href="#"><img src="./assets/img/header/instagram-icon.png" alt=""></a></li>
+
+                </ul>
+            </div>
         </div>
 
         <div class="header__content">
-            <button class="header__btn btn btn--green">Shop now<img src="#" alt="" class="btn__arrow-orange"></button>
+            <button class="header__btn btn btn--green">Shop now<img src="./assets/img/header/arrow-png.png" alt=""
+                    class="btn__arrow-orange"></button>
         </div>
     </header>
 
@@ -143,7 +147,7 @@
         <img src="#" alt="two bottles with smoothie" class="about__img">
         <div class="about__content">
             <h2 class="about__title title title--white">What makes Smoothie an
-                <span class="title--green">awesomedrink?</span>
+                <span class="title--green">awesome drink?</span>
             </h2>
 
             <ul class="about__list">
@@ -202,21 +206,21 @@
         </div>
 
         <div class="products_item"><img src="#" alt="#" class="products__img">
-            <h4 class="products__title title">Vegan Lettuce Smoothie</h4>
+            <h4 class="products__title">Vegan Lettuce Smoothie</h4>
             <span class="products__text">100 ml</span>
             <button class="products__btn btn btn--white-border">Buy<img src="#" alt="#"
                     class="btn__arrow-white"></button>
         </div>
 
         <div class="products_item"><img src="#" alt="#" class="products__img">
-            <h4 class="products__title title">Lemon Ginger Smoothie</h4>
+            <h4 class="products__title">Lemon Ginger Smoothie</h4>
             <span class="products__text">100 ml</span>
             <button class="products__btn btn btn--white-border">Buy<img src="#" alt="#"
                     class="btn__arrow-white"></button>
         </div>
 
         <div class="products_item"><img src="#" alt="#" class="products__img">
-            <h4 class="products__title title">Turmeric Garlic Smoothie</h4>
+            <h4 class="products__title">Turmeric Garlic Smoothie</h4>
             <span class="products__text">100 ml</span>
             <button class="products__btn btn btn--white-border">Buy<img src="#" alt="#"
                     class="btn__arrow-white"></button>
@@ -278,7 +282,8 @@
                 <time class="article__date">Jun 16, 2020</time>
                 <p class="blog__text text text--dark">If the fruit ingredients and the green vegetable ingredients are
                     both juiced ahead of time, the mixed juice doesn't even have to be blended like a smoothie, i.e. a
-                    green juice or anything...<a href="#" class="article__link">Read more<img src="#" alt="#" class="article__img"></a></p>
+                    green juice or anything...<a href="#" class="article__link">Read more<img src="#" alt="#"
+                            class="article__img"></a></p>
             </article>
         </div>
     </section>
@@ -399,7 +404,8 @@
             <small class="footer-copyright__text">&copy; 2020. All Rights Reserved.</small>
             <div class="footer-copyright__content">
                 <span class="footer-copyright__text">Go Top</span>
-                <button class="footer-copyright__btn"><img src="#" alt="#" class="footer-copyright__arrow-white"></button>
+                <button class="footer-copyright__btn"><img src="#" alt="#"
+                        class="footer-copyright__arrow-white"></button>
             </div>
         </div>
     </footer>
