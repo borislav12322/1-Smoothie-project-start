@@ -37,71 +37,77 @@ a {
 }
 
 .header__top {
-    border: 1px solid red;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 100px;
+    margin: 100px 100px 0px 100px;
 }
 
-
 .menu__list {
-    list-style-type: none;
     border: 1px solid red;
+    list-style-type: none;
     display: flex;
     justify-content: space-between;
     width: 540px;
 }
 
-.menu__link {
-    color: #fff;
-    font-size: 16px;
-    font-family: 'MuliBold', serif;
-
-}
-
-.header__logo {
-    border: 1px solid red;
-
-}
-
 .header__right-block {
-    border: 1px solid red;
-    display: flex;
-    align-items: center;
-}
-
-.header__personal {
-    margin-right: 100px;
     display: flex;
     justify-content: flex-end;
     align-items: center;
 }
 
-.personal__list {
+.personal__list{
+    border: 1px solid red;
+    list-style-type: none;
+    display: flex;
+    margin-right: 140px;
+}
+
+.personal__list-item{
+margin-right: 50px;
+
+}
+
+.social__list{
     border: 1px solid red;
     list-style-type: none;
     display: flex;
 }
 
-.personal__list-item {
-    margin-right: 50px;
+.social__list-item{
+    margin-right: 30px;
+
 }
 
-.header__social {
+.header__content{
     border: 1px solid red;
-}
-
-.social__list {
-    border: 1px solid red;
-    list-style-type: none;
     display: flex;
+    justify-content: center;
+    padding-top: 100px;
 }
 
-.social__list-item {
-    margin-right: 50px;
-
+.btn--green{
+    border-radius: 35px;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    -ms-border-radius: 35px;
+    -o-border-radius: 35px;
+    background-color: #0aa566;
+    width: 280px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'MuliReguar';
+    color: white;
+    font-size: 24px;
 }
+
+
+
+
+
 
 
 
