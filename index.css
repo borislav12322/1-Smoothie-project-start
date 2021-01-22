@@ -1,7 +1,12 @@
 /* Здесь подключаем шрифты, используя правило @font-face*/
 @font-face {
-    font-family: MuliRegular;
-    src: url(./assets/fonts/Muli-Regular.woff);
+    font-family: 'MuliRegular';
+    src: url('./assets/fonts/Muli-Regular.woff');
+}
+
+@font-face {
+    font-family: 'MuliBold';
+    src: url('./assets/fonts/Muli-Bold.woff');
 }
 
 /*И повторяем этот кусок кода изменяя имя шрифта и путь к файлу*/
@@ -24,6 +29,7 @@ a {
 
 /* Header */
 .header {
+    height: 100vh;
     border: 1px solid red;
     background-image: url(./assets/img/header/header-bg-img.png);
     background-position: center;
@@ -34,40 +40,88 @@ a {
     border: 1px solid red;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding: 0px 100px;
 }
+
 
 .menu__list {
-    display: flex;
-    justify-self: space-between;
-    border: 1px solid red;
     list-style-type: none;
+    border: 1px solid red;
+    display: flex;
+    justify-content: space-between;
+    width: 540px;
 }
 
-.header__logo{
+.menu__link {
+    color: #fff;
+    font-size: 16px;
+    font-family: 'MuliBold', serif;
+
+}
+
+.header__logo {
+    border: 1px solid red;
+
+}
+
+.header__right-block {
+    border: 1px solid red;
+    display: flex;
+    align-items: center;
+}
+
+.header__personal {
+    margin-right: 100px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 .personal__list {
     border: 1px solid red;
-    display: flex;
-    justify-self: space-between;
     list-style-type: none;
+    display: flex;
+}
+
+.personal__list-item {
+    margin-right: 50px;
+}
+
+.header__social {
+    border: 1px solid red;
 }
 
 .social__list {
     border: 1px solid red;
-    display: flex;
     list-style-type: none;
+    display: flex;
 }
 
-.header__content {
-    border: 1px solid red;
-    display: flex;
-    justify-content: center;
+.social__list-item {
+    margin-right: 50px;
+
 }
+
+
+
 
 
 
 /* Smoothies */
+
+.smoothies {
+    background-color: #fff;
+    border: 1px solid red;
+}
+
+.title--orange {
+    text-align: center;
+}
+
+.smoothies__text {
+    margin: 0px 500px;
+}
 
 
 /* About */
