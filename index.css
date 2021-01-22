@@ -9,23 +9,35 @@
     src: url('./assets/fonts/Muli-Bold.woff');
 }
 
+@font-face {
+    font-family: 'MuliExtraBold';
+    src: url('./assets/fonts/Muli-ExtraBold.woff');
+}
+
+
+
 /*И повторяем этот кусок кода изменяя имя шрифта и путь к файлу*/
 
 
 
 /* Общие стили */
 
-html,
-body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 a {
     text-decoration: none;
 }
 
+.btn {
+    font-family: 'MuliRegular';
+    font-size: 24px;
+    color: white;
+}
+
+.btn--orange-border {
+    border: 2px solid #f8b231;
+}
+
+
+.title {}
 
 /* Header */
 .header {
@@ -40,15 +52,20 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 100px 100px 0px 100px;
+    margin: 70px 100px 0px 100px;
 }
 
 .menu__list {
     border: 1px solid red;
     list-style-type: none;
+    font-family: 'MuliBold';
     display: flex;
     justify-content: space-between;
     width: 540px;
+}
+
+.menu__link {
+    color: white;
 }
 
 .header__right-block {
@@ -57,37 +74,45 @@ a {
     align-items: center;
 }
 
-.personal__list{
+.personal__list {
     border: 1px solid red;
     list-style-type: none;
     display: flex;
     margin-right: 140px;
 }
 
-.personal__list-item{
-margin-right: 50px;
+.personal__list-item {
+    margin-right: 50px;
 
 }
 
-.social__list{
+.personal__list-item:last-child {
+    margin-right: 0px;
+}
+
+.social__list {
     border: 1px solid red;
     list-style-type: none;
     display: flex;
 }
 
-.social__list-item{
+.social__list-item {
     margin-right: 30px;
 
 }
 
-.header__content{
+.social__list-item:last-child {
+    margin-right: 0px;
+}
+
+.header__content {
     border: 1px solid red;
     display: flex;
     justify-content: center;
     padding-top: 100px;
 }
 
-.btn--green{
+.btn--green {
     border-radius: 35px;
     -webkit-border-radius: 35px;
     -moz-border-radius: 35px;
@@ -99,10 +124,14 @@ margin-right: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'MuliReguar';
     color: white;
     font-size: 24px;
+    border: 0px;
+    justify-content: space-between;
+    padding: 0px 40px 0px 40px;
+
 }
+
 
 
 
@@ -117,20 +146,83 @@ margin-right: 50px;
 /* Smoothies */
 
 .smoothies {
-    background-color: #fff;
+    height: 100vh;
     border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
 }
 
 .title--orange {
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-family: 'MuliExtraBold';
+    color: #f7ae3b;
+    font-size: 50px;
 }
 
-.smoothies__text {
+.text--dark {
+    text-align: center;
+    font-family: 'Muli-Regular';
+    font-size: 18px;
+    line-height: 35px;
     margin: 0px 500px;
+}
+
+.smoothies__table {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 450px;
+}
+
+.smoothies__cell {
+    display: flex;
+    flex-direction: column;
 }
 
 
 /* About */
+.about {
+    border: 1px solid red;
+    display: flex;
+    background-color: #118270;
+}
+
+.about__content {
+    border: 1px solid red;
+}
+
+.title--white {
+    font-family: MuliExtraBold;
+    color: white;
+    font-size: 50px;
+}
+
+.about__img {
+    border: 1px solid red;
+    margin-right: 180px;
+}
+
+.about__list {
+    border: 1px solid red;
+    list-style-image: url(./assets/img/About/icon.png);
+    color: white;
+    font-size: 20px;
+
+}
+
+.about__btn {
+    background-color: transparent;
+    border-radius: 30px;
+    width: 380px;
+    height: 60px;
+}
+
+.about__item {
+    font-family: 'MuliRegular';
+}
+
+
 
 
 
