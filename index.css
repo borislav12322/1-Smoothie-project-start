@@ -26,6 +26,10 @@ a {
     text-decoration: none;
 }
 
+.menu {
+    list-style-type: none;
+}
+
 .btn {
     font-family: 'MuliRegular';
     font-size: 24px;
@@ -36,12 +40,11 @@ a {
     border: 2px solid #f8b231;
 }
 
-.text--white{
+.text--white {
     color: white;
 }
 
 
-.title {}
 
 /* Header */
 .header {
@@ -288,16 +291,14 @@ a {
 
 /* Testimonials */
 
-.testimonials{
+.testimonials {
     height: 100vh;
     background-color: #692e1d;
 }
 
-.testimonials__feedback{
+.testimonials__feedback {
     display: flex;
 }
-
-.testimonials__quote text--white
 
 
 /* Blog */
@@ -310,9 +311,55 @@ a {
 
 
 
-.footer-top{
-    background-color: #f5ae3e;
+.footer {
+    border: 1px solid red;
 }
 
+.footer-top {
+    background-color: #f7ae3b;
+    border: 1px solid red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 100px;
+}
+
+.menu__information-list {
+    list-style-type: none;
+}
+
+.footer-top__title{
+    color: white;
+    font-family: 'MuliBold';
+    font-size: 26px;
+}
+
+.menu__link{
+    color: #6d450c;
+    font-family: 'MuliBold';
+    font-size: 18px;
+}
+
+.footer-top__payment {
+    border: 1px solid red;
+}
+
+.footer-top__payment-list {
+    display: flex;
+}
+
+.menu__payment-item {
+    margin: 30px 20px 1px 20px;
+}
+
+.footer-top__social {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-top__social-buttons {
+    display: flex;
+    justify-content: flex-end;
+}
 
 /* Здесь будут медиа запросы */
