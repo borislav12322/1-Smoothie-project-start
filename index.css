@@ -36,6 +36,10 @@ a {
     border: 2px solid #f8b231;
 }
 
+.text--white{
+    color: white;
+}
+
 
 .title {}
 
@@ -208,7 +212,18 @@ a {
     list-style-image: url(./assets/img/About/icon.png);
     color: white;
     font-size: 20px;
+    display: flex;
+    flex-direction: column;
 
+}
+
+
+.about__item {
+    font-family: 'MuliRegular';
+}
+
+.about__text {
+    font-family: 'MuliBold';
 }
 
 .about__btn {
@@ -216,11 +231,10 @@ a {
     border-radius: 30px;
     width: 380px;
     height: 60px;
+    font-family: 'MuliExtraBold';
 }
 
-.about__item {
-    font-family: 'MuliRegular';
-}
+
 
 
 
@@ -228,11 +242,62 @@ a {
 
 /* Products */
 
+.products {
+    display: flex;
+    justify-content: space-between;
+}
+
+.products__item {
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+
+}
+
+.products__img {
+    width: 120px;
+    height: 300px;
+}
+
+.products__item:nth-child(1) {
+    background-color: #672817;
+
+}
+
+.products__item:nth-child(2) {
+    background-color: #14886d;
+
+}
+
+.products__item:nth-child(3) {
+    background-color: #f4ac3b;
+}
+
+.products__item:nth-child(4) {
+    background-color: #c7491c;
+}
 
 /* Story */
 
+.story {
+    display: flex;
+}
+
 
 /* Testimonials */
+
+.testimonials{
+    height: 100vh;
+    background-color: #692e1d;
+}
+
+.testimonials__feedback{
+    display: flex;
+}
+
+.testimonials__quote text--white
 
 
 /* Blog */
@@ -243,6 +308,11 @@ a {
 
 /* Footer */
 
+
+
+.footer-top{
+    background-color: #f5ae3e;
+}
 
 
 /* Здесь будут медиа запросы */
