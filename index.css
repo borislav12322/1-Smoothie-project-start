@@ -437,6 +437,10 @@ a {
     border: 1px solid red;
 }
 
+.footer-top__title{
+    padding-bottom: 35px;
+}
+
 .footer-top {
     background-color: #f7ae3b;
     border: 1px solid red;
@@ -453,7 +457,6 @@ a {
 
 .menu__information-list {
     list-style-type: none;
-    padding-top: 40px;
 }
 
 .menu__information-item{
@@ -503,7 +506,6 @@ a {
     flex-wrap: wrap;
     align-items: center;
     width: 260px;
-    padding-top: 30px;
 }
 
 .menu__payment-item{
@@ -550,6 +552,24 @@ a {
     display: flex;
 }
 
+.footer-top__email-input{
+    border-radius: 30px;
+    border: 0;
+    width: 500px;
+    height: 60px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 .footer-copyright {
     background-color: #692e1d;
     display: flex;
@@ -566,4 +586,29 @@ a {
     background-color: #f2662f;
 }
 
+.footer-top__email-input{
+    padding: 0px 220px 0px 60px;
+}
+
+
+.footer-top__social-buttons{
+    padding-top: 30px;
+}
+
+
+.footer-top__icons{
+    padding-right: 50px;
+}
+
+.footer-top__btn{
+    margin-right: 40px;
+}
+
+
+.footer-top__social-item{
+    margin-right: 30px;
+}
+.footer-top__social-item:last-child{
+    margin-right: 0;
+}
 /* Здесь будут медиа запросы */
