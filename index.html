@@ -19,7 +19,7 @@
     <header class="header">
         <div class="header__top">
             <nav class="header__menu menu">
-                <ul class="menu__list">
+                <ul class="menu__list menu">
                     <li class="menu__item">
                         <a href="#" class="menu__link">HOME</a>
                     </li>
@@ -50,7 +50,7 @@
 
             <div class="header__right-block">
                 <div class="header__personal personal">
-                    <ul class="personal__list">
+                    <ul class="personal__list menu">
                         <li class="personal__list-item">
                             <a href="#" class="personal__link">
                                 <img src="./assets/img/header/search-icon.png" alt="" class="personal__icon-search">
@@ -71,7 +71,7 @@
                 </div>
 
                 <div class="header__social social">
-                    <ul class="social__list">
+                    <ul class="social__list menu">
                         <li class="social__list-item"><a href="#" class="social__link"><img
                                     src="./assets/img/header/facebook-icon.png" alt=""
                                     class="social__icon-facebook"></a>
@@ -238,7 +238,6 @@
     <!--Our story-->
 
     <section class="story">
-        <div class="story__left-block">
             <div class="story__content">
                 <h2 class="story__title title title--orange">Our story</h2>
                 <p class="story__text text text--black">
@@ -251,10 +250,9 @@
                     <img src="./assets/img/our_story/arrow.png" alt="" class="btn__arrow-orange">
                 </button>
             </div>
-        </div>
-        <div class="story__right-block">
+        
             <img src="./assets/img/our_story/smoothie_our_story.png" alt="#" class="story__img">
-        </div>
+
     </section>
 
     <!--Testimonials-->
@@ -273,8 +271,10 @@
         </div>
 
         <div class="testimonials__btns">
-            <button class="testimonials__btn-left"><img src="./assets/img/testimonials/arrow_left.png" alt="#" class="testimonials__arrow-orange"></button>
-            <button class="testimonials__btn-right"><img src="./assets/img/testimonials/arrow_right.png" alt="#" class="testimonials__arrow-orange"></button>
+            <button class="testimonials__btn-left"><img src="./assets/img/testimonials/arrow_left.png" alt="#"
+                    class="testimonials__arrow-orange"></button>
+            <button class="testimonials__btn-right"><img src="./assets/img/testimonials/arrow_right.png" alt="#"
+                    class="testimonials__arrow-orange"></button>
         </div>
 
     </section>
@@ -282,10 +282,13 @@
     <!--Our blog-->
 
     <section class="blog">
-        <h2 class="blog__title title title--orange">Our blog</h2>
+        
 
         <div class="blog__content">
-            <img src="./assets/img/our_blog/our_blog_img.png" alt="#" class="blog__img">
+            <div class="blog__left-block">
+                <h2 class="blog__title title title--orange">Our blog</h2>
+                <img src="./assets/img/our_blog/our_blog_img.png" alt="#" class="blog__img">
+            </div>
             <article class="blog__article article">
                 <h3 class="article__title">ASAFOETIDA - THE NEXT TURMERIC?</h3>
                 <time class="article__date">Jun 16, 2020</time>
@@ -330,7 +333,7 @@
                 <h4 class="footer-top__title">Information</h4>
 
                 <nav class="footer-top__menu menu">
-                    <ul class="menu__information-list">
+                    <ul class="menu__information-list menu">
                         <li class="menu__information-item">
                             <a href="#" class="menu__link">Search</a>
                         </li>
@@ -384,32 +387,34 @@
             <div class="footer-top__social">
                 <h4 class="footer-top__title">Don’t miss out!</h4>
                 <input class="footer-top__email-input" type="email" placeholder="Subscribe to our newsletter">
-            <div class="footer-top__social-buttons">
-                <button class="footer-top__btn">Follow us</button>
+                <div class="footer-top__social-buttons">
+                    <button class="footer-top__btn">Follow us</button>
 
-                <div class="footer-top__icons">
-                    <ul class="footer-top__icons-list menu">
+                    <div class="footer-top__icons">
+                        <ul class="footer-top__icons-list menu">
 
-                        <li class="footer-top__social-item">
-                            <a href="" class="footer-top__social-link">
-                                <img src="./assets/img/footer/facebook.png" alt="#" class="footer-top__social-icon">
-                            </a>
-                        </li>
+                            <li class="footer-top__social-item">
+                                <a href="" class="footer-top__social-link">
+                                    <img src="./assets/img/footer/facebook.png" alt="#" class="footer-top__social-icon">
+                                </a>
+                            </li>
 
-                        <li class="footer-top__social-item">
-                            <a href="#" class="footer-top__social-link">
-                                <img src="./assets/img/footer/pinterest.png" alt="#" class="footer-top__social-icon">
-                            </a>
-                        </li>
+                            <li class="footer-top__social-item">
+                                <a href="#" class="footer-top__social-link">
+                                    <img src="./assets/img/footer/pinterest.png" alt="#"
+                                        class="footer-top__social-icon">
+                                </a>
+                            </li>
 
-                        <li class="footer-top__social-item">
-                            <a href="" class="footer-top__social-link">
-                                <img src="./assets/img/footer/instagram.png" alt="#" class="footer-top__social-icon">
-                            </a>
-                        </li>
+                            <li class="footer-top__social-item">
+                                <a href="" class="footer-top__social-link">
+                                    <img src="./assets/img/footer/instagram.png" alt="#"
+                                        class="footer-top__social-icon">
+                                </a>
+                            </li>
 
-                    </ul>
-                </div>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
@@ -418,7 +423,7 @@
             <small class="footer-copyright__text">&copy; 2020. All Rights Reserved.</small>
             <div class="footer-copyright__content">
                 <span class="footer-copyright__text">Go Top</span>
-                <button class="footer-copyright__btn"><img src="#" alt="#"
+                <button class="footer-copyright__btn"><img src="./assets/img/footer/icon.png" alt="#"
                         class="footer-copyright__arrow-white"></button>
             </div>
         </div>
