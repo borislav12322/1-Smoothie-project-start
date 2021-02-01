@@ -56,9 +56,8 @@ a {
 }
 
 .title--white {
-    font-family: MuliExtraBold;
+
     color: white;
-    font-size: 50px;
 }
 
 .title--green {
@@ -302,12 +301,16 @@ a {
 
 .smoothies__cell:nth-child(n+5){
     border-top: 0;
-    border-right: 0;
+    border-left: 0;
     border-bottom: 0;
 }
 
 .smoothies__cell:nth-child(5){
     border-left: 0;
+}
+
+.smoothies__cell:last-child{
+    border-right: 0;
 }
 
 .smoothies__icon {
@@ -328,19 +331,23 @@ a {
     display: flex;
     background-color: #118270;
     position: relative;
+    padding-top: 100px;
 }
 
 .about__content {
     border: 1px solid red;
-    padding-top: 100px;
-    padding-bottom: 94px;
-    padding-left: 980px;
-    padding-right: 360px;
+    margin-left: 976px;
+    width: 615px;
 }
 
 .about__title {
     border: 1px solid red;
+    font-family: MuliExtraBold;
+    font-size: 55px;
+    letter-spacing: -1.1px;
     position: relative;
+    margin-bottom: 68px;
+
 }
 
 .about__title::after{
@@ -348,7 +355,6 @@ a {
     position: absolute;
     top: 80px;
     left: 69px;
-    
 }
 
 
@@ -368,20 +374,18 @@ a {
     display: flex;
     flex-direction: column;
     list-style-position: inside;
+    margin-bottom: 50px;
 }
 
 
 .about__item {
     font-family: 'MuliRegular';
-    margin-bottom: 30px;
-}
-
-.about__item:first-child {
-    padding-top: 70px;
+    margin-bottom: 22px;
 }
 
 .about__item:last-child {
-    margin-bottom: 50px;
+    margin-bottom: 0;
+    
 }
 
 .about__text {
@@ -395,6 +399,7 @@ a {
     height: 60px;
     font-family: 'MuliExtraBold';
     font-size: 20px;
+    margin-bottom: 65px;
 }
 
 
@@ -475,6 +480,7 @@ a {
     border: 1px solid red;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     width: 511px;
 }
 
