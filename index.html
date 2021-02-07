@@ -23,6 +23,13 @@
                 <img class="header__btn-img-mobile" src="./assets/img/header/menu_btn_mobile.png" alt="">
             </button>
         </div>
+
+        <div class="header__logo logo">
+            <a href="#" class="logo__link">
+                <img src="./assets/img/header/logo.png" alt="logo" class="logo__img">
+            </a>
+        </div>
+
         <div class="header__top">
             <nav class="header__menu menu">
                 <ul class="menu__list menu">
@@ -48,11 +55,7 @@
             </nav>
 
 
-            <div class="header__logo logo">
-                <a href="#" class="logo__link">
-                    <img src="./assets/img/header/logo.png" alt="logo" class="logo__img">
-                </a>
-            </div>
+
 
             <div class="header__right-block">
                 <div class="header__personal personal">
@@ -309,8 +312,10 @@
     <!--Instagram-->
 
     <section class="instagram">
-        <a href="" class="instagram__link"><img src="./assets/img/instagram/icon-inst.png" alt=""
-                class="instagram__icon icon--green">ashasuperfoods</a>
+        <div class="instagram-top">
+            <a href="" class="instagram__link-icon"><img src="./assets/img/instagram/icon-inst.png" alt="" class="instagram__icon-green"></a>
+            <a href="" class="instagram__link-text">ashasuperfoods</a>
+        </div>
         <div class="instagram__content">
             <a href="#" class="instagram__link-post"><img src="./assets/img/instagram/blackberry.png" alt="#"
                     class="instagram__img"></a>
@@ -357,6 +362,11 @@
 
             </div>
 
+            <div class="footer__markets-links">
+                <a href="#" class="footer-top__link-appstore"><img src="./assets/img/footer/appstore_img.png" alt="" class="footer__img-appstore"></a>
+                <a href="#" class="footer-top__link-googleplay"><img src="./assets/img/footer/google_play_img.png" alt="" class="footer__img-googleplay"></a>
+            </div>
+
             <div class="footer-top__payment">
                 <h4 class="footer-top__title">Payment</h4>
                 <ul class="footer-top__payment-list menu">
@@ -392,7 +402,7 @@
 
             <div class="footer-top__social">
                 <h4 class="footer-top__title">Don’t miss out!</h4>
-                <input class="footer-top__email-input" type="email" placeholder="Subscribe to our newsletter">
+                <input class="footer-top__email-input" type="email" placeholder="Subscribe to our newsletter" maxlength="40">
                 <div class="footer-top__social-buttons">
                     <button class="footer-top__btn">FOLLOW US</button>
 

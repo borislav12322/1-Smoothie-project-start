@@ -208,7 +208,7 @@ a {
 }
 
 .social__list-item {
-    margin-right: 30px;
+    margin-right: 10px;
     background-color: white;
     border-radius: 50%;
     -webkit-border-radius: 50%;
@@ -333,6 +333,7 @@ a {
 .smoothies__icon {
     border: 1px solid red;
     margin-bottom: 30px;
+    height: 70px;
 }
 
 .smoothies__text-cell {
@@ -420,11 +421,16 @@ a {
 .about__btn {
     background-color: transparent;
     border-radius: 30px;
-    width: 380px;
+    width: 100%;
+    max-width: 380px;
     height: 60px;
     font-family: 'MuliExtraBold';
     font-size: 20px;
     margin-bottom: 65px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
 }
 
 
@@ -524,7 +530,7 @@ a {
 .story__btn {
     width: 300px;
     font-family: 'MuliExtraBold';
-    font-size: 20px;
+    font-size: 2rem;
 }
 
 .story__smoothie-img {
@@ -562,11 +568,7 @@ a {
     content: url(./assets/img/testimonials/dots_wit_corn.png);
     display: inline-block;
     top: -200px;
-    transform: translateX(190%);
-    -webkit-transform: translateX(190%);
-    -moz-transform: translateX(190%);
-    -ms-transform: translateX(190%);
-    -o-transform: translateX(190%);
+    right: 58px;
 }
 
 .testimonials__feedback {
@@ -584,12 +586,17 @@ a {
 .testimonials__feedback::after {
     content: 'Sarah A';
     font-family: 'MuliExtraBold';
-    font-size: 200px;
+    font-size: 20rem;
     color: rgba(82, 25, 5, 0.6);
     position: absolute;
-    top: -100px;
-    left: 420px;
-    z-index: 12;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-70%);
+    -webkit-transform: translateX(-70%);
+    -moz-transform: translateX(-70%);
+    -ms-transform: translateX(-70%);
+    -o-transform: translateX(-70%);
+    top: -30%;
 }
 
 .testimonials__content {
@@ -630,23 +637,19 @@ a {
     display: flex;
     justify-content: center;
     position: relative;
-
 }
 
 .testimonials__btn-left {
     background: transparent;
     border: 0;
     position: absolute;
-    top: 0;
-    left: 881px;
-
+    margin-right: 100px;
 }
 
 .testimonials__btn-right {
     background: transparent;
     border: 0;
-    position: absolute;
-    left: 1009px;
+    margin-left: 100px;
 }
 
 
@@ -659,6 +662,8 @@ a {
     border: 1px solid red;
     padding-right: 380px;
     padding-left: 360px;
+    display: flex;
+    justify-content: center;
 }
 
 
@@ -671,7 +676,6 @@ a {
 .blog__content {
     border: 1px solid red;
     display: flex;
-    justify-content: center;
     align-items: center;
     position: relative;
     z-index: 1;
@@ -741,6 +745,7 @@ a {
     position: relative;
 }
 
+
 /* Instagram */
 
 .instagram {
@@ -750,7 +755,17 @@ a {
     justify-content: center;
 }
 
-.instagram__link {
+.instagram-top{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 45px;
+}
+
+.instagram__link-icon{
+    margin-right: 12px;
+}
+
+.instagram__link-text {
     border: 1px solid red;
     font-family: 'MuliExtraBold';
     font-size: 24px;
@@ -758,7 +773,6 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-bottom: 40px;
 }
 
 .instagram__content {
@@ -774,11 +788,8 @@ a {
 .instagram__link-post::before {
     content: url(./assets/img/instagram/icon-insta.png);
     position: absolute;
-    transform: translatex(1250%);
-    -webkit-transform: translatex(1250%);
-    -moz-transform: translatex(1250%);
-    -ms-transform: translatex(1250%);
-    -o-transform: translatex(1250%);
+    right: 22px;
+    top: 88%;
 }
 
 .instagram__img {
@@ -955,16 +966,13 @@ a {
 
 
 .footer-top__social-buttons {
-    position: relative;
     padding-top: 30px;
 }
 
-.footer-top__social-buttons::before {
-    content: url(./assets/img/footer/arrow_follow.png);
-    position: absolute;
-    top: 12px;
-    left: 120px;
-}
+
+
+
+
 
 .footer-top__icons {
     padding-right: 50px;
@@ -977,6 +985,14 @@ a {
     font-size: 18px;
     font-family: 'MuliExtraBold';
     background: transparent;
+    position: relative;
+}
+
+.footer-top__btn::before {
+    content: url(./assets/img/footer/arrow_follow.png);
+    position: absolute;
+    top: -16px;
+    left: -65px;
 }
 
 .footer-top__social-item {
@@ -991,6 +1007,7 @@ a {
 
 
 
+
 .footer-copyright {
     background-color: #692e1d;
     display: flex;
@@ -998,7 +1015,6 @@ a {
     align-items: center;
     position: relative;
 }
-
 
 .footer-copyright__signature {
     color: #af8a82;
@@ -1008,6 +1024,8 @@ a {
     justify-content: center;
     align-items: center;
     padding: 20px 0px 20px 0px;
+    position: relative;
+
 }
 
 .footer-copyright__content {
@@ -1016,11 +1034,8 @@ a {
     display: flex;
     align-items: center;
     position: absolute;
-    left: 1707px;
+    right: 100px;
 }
-
-
-
 
 .footer-copyright__btn {
     background-color: #f2662f;
@@ -1032,21 +1047,26 @@ a {
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
-}
-
-.footer-copyright__text {
-    padding-right: 13px;
-}
-
-.footer-copyright__btn {
+    margin-left: 13px;
     position: absolute;
-    left: 62px;
-    bottom: 10px;
+    top: -44px;
+    left: 50px;
+
 }
+
+.footer-copyright__text {}
+
 
 
 /* Здесь будут медиа запросы */
 
+
+
+@media display and (max-width: 1920px){
+    .footer__markets-links{
+        display: none;
+    }
+}
 
 @media all and (max-width: 375px) {
 
@@ -1119,26 +1139,68 @@ a {
 
 
 
-    .smoothies__text {
-        width: 315px;
+    .smoothies{
+        padding: 0px 10px 0px 10px;
     }
 
     .smoothies__cell {
-        border: 0px;
         width: 150px;
     }
 
     .smoothies__text-cell {
         text-align: center;
+        font-size: 18px;
     }
+
+    .smoothies__cell:nth-child(2n+1) {
+        border-right: 2px solid #f6edde;
+    }
+    
+    .smoothies__cell:nth-child(2){
+        border-right: 0;
+    }
+
+    .smoothies__cell:nth-child(6){
+        border-right: 0;
+    }
+
+    .smoothies__cell:nth-child(){
+        border-right: 0;
+    }
+
+    .smoothies__cell:nth-child(7){
+        border-top: 2px solid #f6edde;
+    }
+
+
+    .smoothies__cell:last-child{
+        border-top: 2px solid #f6edde;
+    }
+
 
 
 
     /* About */
+
+    .about{
+        padding: 30px 20px 30px 20px;
+    }
+
     .about__title {
         font-size: 34px;
         text-align: center;
     }
+
+
+    .about__title-text::after {
+        display: block;
+        content: url(./assets/img/About/line_about.png);
+        position: absolute;
+        top: 30px;
+        left: -10px;
+        display: none;
+    }
+
 
     .about__img {
         display: none;
@@ -1146,7 +1208,16 @@ a {
 
     .about__content {
         margin-left: 0;
-        width: 34rem;
+    }
+
+    .about__list {
+        font-size: 1.4rem;
+
+    }
+
+    .about__btn {
+        font-size: 1.6rem;
+        margin: 0;
     }
 
 
@@ -1167,7 +1238,7 @@ a {
         font-size: 20px;
     }
 
-    .products__text{
+    .products__text {
         font-size: 18px;
     }
 
@@ -1175,16 +1246,15 @@ a {
 
 
     .story {
-        padding-right: 0;
-        padding-left: 0;
+        padding-right: 15px;
+        padding-left: 15px;
         padding-top: 100px;
-        position: relative;
         flex-direction: column;
         justify-content: center;
     }
 
-    .story__content{
-        max-width: 320px;
+    .story__content {
+        position: relative;
     }
 
     .story__img {
@@ -1198,7 +1268,7 @@ a {
 
     .story__btn {
         position: absolute;
-        top: 75%;
+        top: 350px;
         left: 50%;
         transform: translateX(-50%);
         -webkit-transform: translateX(-50%);
@@ -1214,6 +1284,7 @@ a {
 
     .story__text {
         text-align: center;
+        margin: 0;
     }
 
     /*Testimonials*/
@@ -1241,19 +1312,45 @@ a {
         padding: 0;
     }
 
+    .testimonials__title::before {
+        position: absolute;
+        content: url(./assets/img/testimonials/dots_wit_corn.png);
+        display: inline-block;
+        top: -200px;
+        right: 58px;
+        display: none;
+    }
+
+    .testimonials__feedback::after {
+        display: none;
+    }
+
     /*Our Blog*/
 
     .blog {
+        padding: 0;
+        flex-direction: column;
+        padding-bottom: 40px;
+
+    }
+
+    .blog__left-block {
         padding: 0;
     }
 
     .blog__content {
         flex-direction: column;
-        justify-content: center;
+        padding: 0px 10px 0px 10px;
     }
 
     .blog__article {
         justify-content: center;
+        text-align: center;
+    }
+
+    .article__date{
+        align-self: start;
+        margin-left: 30px;
     }
 
     .blog__text {
@@ -1268,10 +1365,18 @@ a {
         content: '';
     }
 
-
+    .blog__left-block::before {
+        display: none;
+    }
 
 
     /*Instagram*/
+
+    .instagram-top{
+        align-items: center;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
 
     .instagram__content {
         overflow: auto;
@@ -1285,60 +1390,115 @@ a {
 
 
     /*Footer*/
-
     .footer-top {
         flex-direction: column;
         padding: 0;
-
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 20px;
+        padding-bottom: 20px;
     }
 
 
     .footer-top__logo {
-        margin: 100px 0px;
+        align-self: flex-start;
+        margin-bottom: 20px;
     }
 
 
     .footer-top__info-content {
         display: flex;
         flex-direction: column;
-        align-items: center;
-        margin-bottom: 100px;
+        justify-content: flex-start;
+        margin-bottom: 30px;
     }
 
-    .menu__information-item {
-        text-align: center;
 
+
+    .footer-top__title{
+        align-self: flex-start;
     }
 
-    .footer-top__payment {
+    .footer__markets-links{
+        margin-bottom: 30px;
         display: flex;
         flex-direction: column;
     }
 
-    .footer-top__payment-list {
-        max-width: 300px;
-    }
-
-    .menu__payment-item {
-        flex-wrap: nowrap;
-        margin-right: 20px;
-        margin-bottom: 0;
-    }
-
-    .menu__payment-item:nth-child(4) {
-        margin-right: 0;
-    }
-
-    .menu__payment-item:nth-child(8) {
-        margin-bottom: 0px;
-    }
-
-    .menu__payment-item:last-child {
-        margin-bottom: 0px;
+    .footer-top__link-appstore{
+        margin-bottom: 15px;
     }
 
 
-    .footer-top__title {
-        text-align: center;
+
+    .footer__img-appstore{
+        max-width: 200px;
+    }
+
+
+    .footer__img-googleplay{
+        max-width: 200px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .footer-top__payment {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+
+
+    .footer-top__email-input{
+        font-size: 1.4rem;
+        max-width: 500px;
+        width: 100%;
+    }
+
+    .footer-top__social-buttons{
+        justify-content: center;
+    }
+
+    .footer-top__btn{
+        font-size: 1.4em;
+    }
+
+    .footer-top__icons{
+        padding: 0;
+    }
+
+
+    .footer-top__social-item{
+        margin-right: 15px;
+    }
+
+
+    .footer-top__btn::before {
+        content: url(./assets/img/footer/down-arrow-footer.png);
+        position: absolute;
+        top: -28px;
+        left: 25px;
+    }
+
+
+
+
+
+
+
+
+
+    .footer-copyright__content{
+        display: none;
     }
 }
