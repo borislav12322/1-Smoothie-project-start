@@ -1,0 +1,59 @@
+// main: ../../main.less
+
+.products {
+    display: flex;
+    justify-content: space-between;
+
+
+    &__item {
+        border: 1px solid red;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 130px 0px 90px 0px;
+        flex-grow: 1;
+
+
+        &:nth-child(1) {
+            background-color: #672817;
+        }
+
+        &:nth-child(2) {
+            background-color: #14886d;
+
+        }
+
+        &:nth-child(3) {
+            background-color: #f4ac3b;
+        }
+
+        &:nth-child(4) {
+            background-color: #c7491c;
+        }
+    }
+
+    &__title {
+        font-family: 'MuliBold';
+        font-size: 24px;
+        margin-top: 30px;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+
+    &__text {
+        margin-bottom: 65px;
+        font-family: 'MuliItalic';
+        font-size: 21px;
+    }
+
+
+    &__btn {
+        display: flex;
+        max-width: 200px;
+        width: 100%;
+        height: 60px;
+        font-family: 'MuliExtraBold';
+        font-size: 20px;
+    }
+}

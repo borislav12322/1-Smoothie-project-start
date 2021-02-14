@@ -1,0 +1,57 @@
+// main: ../../main.less
+
+
+.instagram {
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+
+    &-top {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 45px;
+
+
+        &__link-icon {
+            margin-right: 12px;
+        }
+
+        &__link-text {
+            border: 1px solid red;
+            font-family: 'MuliExtraBold';
+            font-size: 24px;
+            color: #0aa566;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    &__content {
+        display: flex;
+    }
+
+    &__link-post {
+        position: relative;
+        display: flex;
+        flex: 1 0 20%;
+    }
+
+    &__link-post::before {
+        content: url(./assets/img/instagram/icon-insta.png);
+        position: absolute;
+        right: 22px;
+        top: 88%;
+    }
+
+    &__img {
+        object-fit: contain;
+        width: 100%;
+    }
+
+    &__icon {
+        margin-left: 12px;
+    }
+}

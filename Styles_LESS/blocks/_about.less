@@ -1,0 +1,89 @@
+// main: ../../main.less
+
+
+.about {
+    border: 1px solid red;
+    display: flex;
+    background-color: #118270;
+    position: relative;
+    padding-top: 100px;
+    flex-wrap: wrap;
+
+
+    &__content {
+        border: 1px solid red;
+        margin-left: 976px;
+        max-width: 615px;
+        width: 100%;
+    }
+
+    &__title {
+        border: 1px solid red;
+        font-family: MuliExtraBold;
+        font-size: 55px;
+        letter-spacing: -1.1px;
+        margin-bottom: 68px;
+        width: 100%;
+
+    }
+
+    &__title-text {
+        position: relative;
+    }
+
+
+    &__title-text::after {
+        display: block;
+        content: url(./assets/img/About/line_about.png);
+        position: absolute;
+        top: 30px;
+        left: -10px;
+    }
+
+    &__img {
+        border: 1px solid red;
+        position: absolute;
+        left: 143px;
+        top: 64px;
+    }
+
+    &__list {
+        border: 1px solid red;
+        color: white;
+        font-size: 20px;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 50px;
+    }
+
+    &__item {
+        font-family: 'MuliRegular';
+        margin-bottom: 22px;
+        list-style-image: url(../../assets/img/About/icon_for_list.png);
+        list-style-position: inside;
+    }
+
+    &__item:last-child {
+        margin-bottom: 0;
+
+    }
+
+    &__text {
+        font-family: 'MuliExtraBold';
+    }
+
+    &__btn {
+        background-color: transparent;
+        border-radius: 30px;
+        width: 100%;
+        max-width: 380px;
+        height: 60px;
+        font-family: 'MuliExtraBold';
+        font-size: 20px;
+        margin-bottom: 65px;
+        -webkit-border-radius: 30px;
+        -moz-border-radius: 30px;
+        -ms-border-radius: 30px;
+        -o-border-radius: 30px;
+    }
+}

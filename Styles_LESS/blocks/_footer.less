@@ -1,0 +1,217 @@
+// main: ../../main.less
+
+.footer {
+    border: 1px solid red;
+
+
+    &-top {
+        background-color: #f7ae3b;
+        border: 1px solid red;
+        display: flex;
+        justify-content: space-between;
+        padding: 80px 100px 90px 100px;
+
+
+        &__logo {
+            display: flex;
+            align-self: center;
+        }
+
+        // Information
+
+        &__info-content {
+            border: 1px solid red;
+        }
+
+        &__title-information {
+            color: white;
+            font-family: 'MuliBold';
+            font-size: 26px;
+            border: 1px solid red;
+            margin-bottom: 35px;
+        }
+
+        // Payment
+
+        &__payment {
+            border: 1px solid red;
+        }
+
+        &__title-payment {
+            color: white;
+            font-family: 'MuliBold';
+            font-size: 26px;
+            border: 1px solid red;
+            margin-bottom: 35px;
+        }
+
+        &__payment-list {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            max-width: 260px;
+            width: 100%;
+        }
+
+        // Social
+
+        &__social {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__social-buttons {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        &__icons-list {
+            display: flex;
+        }
+
+        &__email-input {
+            border-radius: 30px;
+            border: 0;
+            width: 500px;
+            height: 60px;
+            background-image: url(./assets/img/footer/icon_mail_footer.png);
+            background-repeat: no-repeat;
+            background-position: 20px center;
+            font-size: 17px;
+            padding: 0px 50px 0px 60px;
+            font-family: 'MuliBold';
+            color: #6d450c;
+            letter-spacing: -0.34px;
+        }
+
+        &__social-buttons {
+            padding-top: 30px;
+        }
+
+        &__icons {
+            padding-right: 50px;
+        }
+
+        &__btn {
+            margin-right: 40px;
+            border: 0px;
+            color: #6d450c;
+            font-size: 18px;
+            font-family: 'MuliExtraBold';
+            background: transparent;
+            position: relative;
+        }
+
+        &__btn::before {
+            content: url(./assets/img/footer/arrow_follow.png);
+            position: absolute;
+            top: -16px;
+            left: -65px;
+        }
+
+        &__social-item {
+            margin-right: 30px;
+        }
+
+        &__social-item:last-child {
+            margin-right: 0;
+        }
+    }
+
+    // Copyright
+
+    &-copyright {
+        background-color: #692e1d;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+
+
+        &__signature {
+            color: #af8a82;
+            font-family: 'MuliRegular';
+            font-size: 13px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px 0px 20px 0px;
+            position: relative;
+        }
+
+        &__content {
+            font-family: 'MuliBold';
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+            position: absolute;
+            right: 100px;
+        }
+
+        &__btn {
+            background-color: #f2662f;
+            width: 50px;
+            height: 50px;
+            border: 0px;
+            border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            -ms-border-radius: 5px;
+            -o-border-radius: 5px;
+            margin-left: 13px;
+            position: absolute;
+            top: -44px;
+            left: 50px;
+        }
+    }
+}
+
+// Information-Menu
+
+.menu__information-list {
+    list-style-type: none;
+}
+
+.menu__information-item {
+    color: #6d450c;
+    font-family: 'MuliBold';
+    font-size: 18px;
+    padding-bottom: 25px;
+    color: white;
+}
+
+.menu__link-information {
+    color: #6d450c
+}
+
+.menu__information-item:last-child {
+    padding-bottom: 0px;
+}
+
+// Payment-Menu
+
+.menu__payment-item {
+    border: 1px solid red;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.menu__payment-item:nth-child(4) {
+    margin-right: 0;
+}
+
+.menu__payment-item:nth-child(8) {
+    margin-bottom: 0px;
+}
+
+.menu__payment-item:last-child {
+    margin-bottom: 0px;
+}
+
+.footer-top__title-social {
+    color: white;
+    font-family: 'MuliBold';
+    font-size: 26px;
+    border: 1px solid red;
+    margin-bottom: 35px;
+}

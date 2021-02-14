@@ -1,0 +1,32 @@
+// main: ../../main.less
+
+.btn {
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    border: 0px;
+    font-family: 'MuliExtraBold';
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    &--orange-border {
+        border: 2px solid #f8b231;
+    }
+
+    &--green {
+        background-color: @primaryButtonBackgroundColor;
+    }
+
+    &--white-border {
+        background-color: transparent;
+        border: 2px solid #ffffff;
+    }
+}

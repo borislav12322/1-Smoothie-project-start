@@ -154,11 +154,11 @@ a {
     color: white;
 }
 
-.menu__item{
+.menu__item {
     margin-right: 34px;
 }
 
-.menu__item:last-child{
+.menu__item:last-child {
     margin-right: 0;
 }
 
@@ -739,7 +739,6 @@ a {
     font-size: 18px;
     line-height: 35px;
     margin-left: 63px;
-
 }
 
 .article__link {
@@ -763,17 +762,17 @@ a {
     justify-content: center;
 }
 
-.instagram-top{
+.instagram-top {
     display: flex;
     justify-content: center;
     margin-bottom: 45px;
 }
 
-.instagram__link-icon{
+.instagram-top__link-icon {
     margin-right: 12px;
 }
 
-.instagram__link-text {
+.instagram-top__link-text {
     border: 1px solid red;
     font-family: 'MuliExtraBold';
     font-size: 24px;
@@ -1066,12 +1065,12 @@ a {
 
 
 
-@media all and (min-width: 1920px){
-    .footer__markets-links{
+@media all and (min-width: 1920px) {
+    .footer__markets-links {
         display: none;
     }
 
-    .header-top__btn-close-menu{
+    .header-top__btn-close-menu {
         display: none;
     }
 
@@ -1167,7 +1166,7 @@ a {
 */
 
 
-@media only screen and (min-width: 360px) and (max-width: 480px) and (orientation: portrait){
+@media only screen and (min-width: 360px) and (max-width: 480px) and (orientation: portrait) {
 
     /* Header */
 
@@ -1234,7 +1233,8 @@ a {
         background: transparent;
         border: none;
     }
-    .header__logo{
+
+    .header__logo {
         display: none;
     }
 
@@ -1242,19 +1242,19 @@ a {
 
 
 
-    .smoothies{
+    .smoothies {
         padding: 0px 10px 0px 10px;
     }
 
-    .smoothies__title{
+    .smoothies__title {
         margin-top: 30px;
     }
 
-    .smoothies__text{
+    .smoothies__text {
         margin-bottom: 50px;
     }
 
-    .smoothies__table{
+    .smoothies__table {
         margin-bottom: 50px;
     }
 
@@ -1262,7 +1262,7 @@ a {
         width: 150px;
     }
 
- 
+
     .smoothies__text-cell {
         text-align: center;
         font-size: 18px;
@@ -1271,25 +1271,25 @@ a {
     .smoothies__cell:nth-child(2n+1) {
         border-right: 2px solid #f6edde;
     }
-    
-    .smoothies__cell:nth-child(2){
+
+    .smoothies__cell:nth-child(2) {
         border-right: 0;
     }
 
-    .smoothies__cell:nth-child(6){
+    .smoothies__cell:nth-child(6) {
         border-right: 0;
     }
 
-    .smoothies__cell:nth-child(){
+    .smoothies__cell:nth-child() {
         border-right: 0;
     }
 
-    .smoothies__cell:nth-child(7){
+    .smoothies__cell:nth-child(7) {
         border-top: 2px solid #f6edde;
     }
 
 
-    .smoothies__cell:last-child{
+    .smoothies__cell:last-child {
         border-top: 2px solid #f6edde;
     }
 
@@ -1298,7 +1298,7 @@ a {
 
     /* About */
 
-    .about{
+    .about {
         padding: 30px 10px 30px 10px;
     }
 
@@ -1406,15 +1406,15 @@ a {
 
     /*Testimonials*/
 
-    .testimonials{
+    .testimonials {
         padding: 20px 10px 0px 10px;
     }
 
-    .testimonials__title{
+    .testimonials__title {
         margin-bottom: 50px;
         font-size: 30px;
     }
-    
+
     .testimonials__feedback {
         flex-direction: column-reverse;
         justify-content: center;
@@ -1454,7 +1454,7 @@ a {
     }
 
 
-    .testimonials__btns{
+    .testimonials__btns {
         margin-bottom: 50px;
         margin-top: 50px;
     }
@@ -1472,7 +1472,7 @@ a {
         padding: 0;
     }
 
-    .blog__title{
+    .blog__title {
         margin-top: 50px;
     }
 
@@ -1486,7 +1486,7 @@ a {
         text-align: center;
     }
 
-    .article__date{
+    .article__date {
         align-self: start;
         margin-left: 30px;
     }
@@ -1510,7 +1510,7 @@ a {
 
     /*Instagram*/
 
-    .instagram-top{
+    .instagram-top {
         align-items: center;
         margin-bottom: 20px;
         margin-top: 20px;
@@ -1553,28 +1553,28 @@ a {
 
 
 
-    .footer-top__title{
+    .footer-top__title {
         align-self: flex-start;
     }
 
-    .footer__markets-links{
+    .footer__markets-links {
         margin-bottom: 30px;
         display: flex;
         flex-direction: column;
     }
 
-    .footer-top__link-appstore{
+    .footer-top__link-appstore {
         margin-bottom: 15px;
     }
 
 
 
-    .footer__img-appstore{
+    .footer__img-appstore {
         max-width: 200px;
     }
 
 
-    .footer__img-googleplay{
+    .footer__img-googleplay {
         max-width: 200px;
     }
 
@@ -1597,27 +1597,27 @@ a {
     }
 
 
-    .footer-top__email-input{
+    .footer-top__email-input {
         font-size: 1.4rem;
         max-width: 500px;
         width: 100%;
     }
 
-    .footer-top__social-buttons{
+    .footer-top__social-buttons {
         justify-content: center;
         position: relative;
     }
 
-    .footer-top__btn{
+    .footer-top__btn {
         font-size: 1.4em;
     }
 
-    .footer-top__icons{
+    .footer-top__icons {
         padding: 0;
     }
 
 
-    .footer-top__social-item{
+    .footer-top__social-item {
         margin-right: 15px;
     }
 
@@ -1637,7 +1637,7 @@ a {
 
 
 
-    .footer-copyright__content{
+    .footer-copyright__content {
         display: none;
     }
 }

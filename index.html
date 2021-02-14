@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./normalize_and_reset/normalize.css">
-    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./main.min.css">
     <!-- Сюда подключаем стили -->
 
     <title>Organic</title>
@@ -18,11 +18,11 @@
 
     <header class="header">
 
-        <!-- <div class="header__menubar-mobile">
+        <div class="header__menubar-mobile">
             <button class="header__btn-menubar-mobile">
                 <img class="header__btn-img-mobile" src="./assets/img/header/menu_btn_mobile.png" alt="">
             </button>
-        </div> -->
+        </div>
 
         <div class="header__logo logo">
             <a href="#" class="logo__link">
@@ -35,6 +35,7 @@
             <!-- <button class="header-top__btn-close-menu">
                 <img class="btn-close-menu__img" src="./assets/img/header/close.png" alt="">
             </button> -->
+
             <nav class="header__menu menu">
                 <ul class="menu__list menu">
                     <li class="menu__item">
@@ -291,7 +292,6 @@
             <button class="testimonials__btn-right"><img src="./assets/img/testimonials/arrow_right.png" alt="#"
                     class="testimonials__arrow-orange"></button>
         </div>
-
     </section>
 
     <!--Our blog-->
@@ -317,8 +317,9 @@
 
     <section class="instagram">
         <div class="instagram-top">
-            <a href="" class="instagram__link-icon"><img src="./assets/img/instagram/icon-inst.png" alt="" class="instagram__icon-green"></a>
-            <a href="" class="instagram__link-text">ashasuperfoods</a>
+            <a href="" class="instagram-top__link-icon"><img src="./assets/img/instagram/icon-inst.png" alt=""
+                    class="instagram__icon-green"></a>
+            <a href="" class="instagram-top__link-text">ashasuperfoods</a>
         </div>
         <div class="instagram__content">
             <a href="#" class="instagram__link-post"><img src="./assets/img/instagram/blackberry.png" alt="#"
@@ -345,7 +346,7 @@
             </div>
 
             <div class="footer-top__info-content">
-                <h4 class="footer-top__title">Information</h4>
+                <h4 class="footer-top__title-information">Information</h4>
 
                 <nav class="footer-top__menu menu">
                     <ul class="menu__information-list menu">
@@ -366,13 +367,13 @@
 
             </div>
 
-            <div class="footer__markets-links">
+            <!-- <div class="footer__markets-links">
                 <a href="#" class="footer-top__link-appstore"><img src="./assets/img/footer/appstore_img.png" alt="" class="footer__img-appstore"></a>
                 <a href="#" class="footer-top__link-googleplay"><img src="./assets/img/footer/google_play_img.png" alt="" class="footer__img-googleplay"></a>
-            </div>
+            </div> -->
 
             <div class="footer-top__payment">
-                <h4 class="footer-top__title">Payment</h4>
+                <h4 class="footer-top__title-payment">Payment</h4>
                 <ul class="footer-top__payment-list menu">
                     <li class="menu__payment-item">
                         <img src="./assets/img/footer/amex.png" alt="#" class="menu__payment-icon">
@@ -405,8 +406,9 @@
             </div>
 
             <div class="footer-top__social">
-                <h4 class="footer-top__title">Don’t miss out!</h4>
-                <input class="footer-top__email-input" type="email" placeholder="Subscribe to our newsletter" maxlength="40">
+                <h4 class="footer-top__title-social">Don’t miss out!</h4>
+                <input class="footer-top__email-input" type="email" placeholder="Subscribe to our newsletter"
+                    maxlength="40">
                 <div class="footer-top__social-buttons">
                     <button class="footer-top__btn">FOLLOW US</button>
 

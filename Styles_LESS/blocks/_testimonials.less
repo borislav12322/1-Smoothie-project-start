@@ -1,0 +1,106 @@
+// main: ../../main.less
+
+.testimonials {
+    background-color: #692e1d;
+    position: relative;
+    padding: 120px 0px;
+    display: flex;
+    flex-direction: column;
+
+    &__title {
+        border: 1px solid red;
+        text-align: center;
+        position: relative;
+        margin-bottom: 120px;
+    }
+
+    &__title::before {
+        position: absolute;
+        content: url(./assets/img/testimonials/dots_wit_corn.png);
+        display: inline-block;
+        top: -200px;
+        right: 58px;
+    }
+
+    &__feedback {
+        border: 1px solid red;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        z-index: 1;
+        margin-bottom: 144px;
+    }
+
+
+    &__feedback::after {
+        content: 'Sarah A';
+        font-family: 'MuliExtraBold';
+        font-size: 20rem;
+        color: rgba(82, 25, 5, 0.6);
+        position: absolute;
+        bottom: 40px;
+        left: 50%;
+        transform: translateX(-70%);
+        -webkit-transform: translateX(-70%);
+        -moz-transform: translateX(-70%);
+        -ms-transform: translateX(-70%);
+        -o-transform: translateX(-70%);
+        top: -30%;
+    }
+
+    &__content {
+        border: 1px solid red;
+        display: flex;
+        flex-direction: column;
+        max-width: 470px;
+        width: 100%;
+        text-align: center;
+        margin-right: 60px;
+    }
+
+    &__quote {
+        font-family: 'MuliRegular';
+        font-size: 18px;
+        line-height: 35px;
+        position: relative;
+        z-index: 100;
+    }
+
+    &__cite {
+        font-family: 'MuliSemiBoldItalic';
+        color: #f7ae3b;
+        font-size: 18px;
+        line-height: 45px;
+        display: flex;
+        justify-content: center;
+        z-index: 100;
+    }
+
+    &__img {
+        position: relative;
+        z-index: 100;
+    }
+
+    &__btns {
+        border: 1px solid red;
+        display: flex;
+        justify-content: center;
+        position: relative;
+    }
+
+    &__btn-left {
+        background: transparent;
+        border: 0;
+        position: absolute;
+        margin-right: 100px;
+    }
+
+    &__btn-right {
+        background: transparent;
+        border: 0;
+        margin-left: 100px;
+    }
+
+}

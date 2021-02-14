@@ -1,37 +1,5 @@
 // out: ./main.min.css, compress: true, sourceMap: true
 
-@import './_varaibles.less';
-@import './Styles_LESS/blocks/_buttons.less';
-@import './Styles_LESS/fonts.less';
-@import './Styles_LESS/blocks/titles.less';
-@import './Styles_LESS/blocks/_text.less';
-@import './Styles_LESS/blocks/_header.less';
-@import './Styles_LESS/blocks/_smoothies.less';
-@import './Styles_LESS/blocks/_about.less';
-@import './Styles_LESS/blocks/_products.less';
-@import './Styles_LESS/blocks/_story.less';
-@import './Styles_LESS/blocks/_testimonials.less';
-@import './Styles_LESS/blocks/_blog.less';
-@import './Styles_LESS/blocks/_instagram.less';
-@import './Styles_LESS/blocks/_footer.less';
-
-html,
-body {
-    font-size: 10px;
-}
-
-a {
-    text-decoration: none;
-}
-
-li {
-    list-style: none;
-}
-
-
-
-// Media Query
-
 @media all and (min-width: 1920px) {
     .footer__markets-links {
         display: none;
@@ -127,15 +95,14 @@ li {
         display: none;
     }
 
+
+
 }
 */
 
 
 @media only screen and (min-width: 360px) and (max-width: 480px) and (orientation: portrait) {
 
-    .title--orange{
-        font-size: 40px;
-    }
     /* Header */
 
 
@@ -252,7 +219,6 @@ li {
     .smoothies__cell:last-child {
         border-top: 2px solid #f6edde;
     }
-
     /* About */
 
     .about {
@@ -260,9 +226,9 @@ li {
     }
 
     .about__title {
+        font-size: 34px;
         text-align: center;
         margin-bottom: 30px;
-        font-size: 28px;
     }
 
 
@@ -307,6 +273,7 @@ li {
     }
 
     .products__title {
+        font-size: 20px;
     }
 
     .products__text {
@@ -346,6 +313,7 @@ li {
         -o-transform: translateX(-50%);
     }
 
+
     .story__title {
         text-align: center;
     }
@@ -363,6 +331,7 @@ li {
 
     .testimonials__title {
         margin-bottom: 50px;
+        font-size: 30px;
     }
 
     .testimonials__feedback {
@@ -382,6 +351,7 @@ li {
 
     .testimonials__cite {
         text-align: center;
+
     }
 
     .testimonials__img {
@@ -414,6 +384,7 @@ li {
         padding: 0;
         flex-direction: column;
         padding-bottom: 40px;
+
     }
 
     .blog__left-block {
@@ -455,6 +426,7 @@ li {
         display: none;
     }
 
+
     /*Instagram*/
 
     .instagram-top {
@@ -471,11 +443,17 @@ li {
         flex: 1 0 90%;
     }
 
-    /*Footer*/
 
+
+
+    /*Footer*/
     .footer-top {
         flex-direction: column;
-        padding: 20px;
+        padding: 0;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 20px;
+        padding-bottom: 20px;
     }
 
 
@@ -518,7 +496,7 @@ li {
     .footer__img-googleplay {
         max-width: 200px;
     }
-
+    
     .footer-top__payment {
         display: flex;
         flex-direction: column;
@@ -550,424 +528,6 @@ li {
         margin-right: 15px;
     }
 
-    .footer-top__btn::before {
-        content: url(./assets/img/footer/down-arrow-footer.png);
-        position: absolute;
-        top: -28px;
-        left: 25px;
-    }
-
-
-
-
-    .footer-copyright__content {
-        display: none;
-    }
-}
-
-@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
-
-    .title--orange{
-        font-size: 40px;
-    }
-    /* Header */
-
-
-    .header {
-        max-width: 1024px;
-        width: 100%;
-        background-size: cover;
-        background-color: #feb135;
-        background-image: none;
-        position: relative;
-    }
-
-
-    .header::before {
-        content: '';
-        position: absolute;
-        background-image: url(./assets/img/header/smoothie_header_bg.png);
-        background-size: contain;
-        background-repeat: no-repeat;
-        width: 370px;
-        height: 370px;
-        bottom: 0;
-        left: 50%;
-        transform: translateX(-50%);
-        -moz-transform: translateX(-50%);
-        -ms-transform: translateX(-50%);
-        -o-transform: translateX(-50%);
-        -webkit-transform: translateX(-50%);
-    }
-
-
-    .header__top {
-        display: none;
-    }
-
-    .header__content {
-        position: relative;
-        top: 25%;
-    }
-
-
-    .header__menubar-mobile {
-        position: fixed;
-        top: 0;
-        right: 0;
-        left: 0px;
-        max-width: 1024px;
-        width: 100%;
-        height: 120px;
-        background-color: #0aa566;
-        background-image: url(./assets/img/header/logo.png);
-        background-repeat: no-repeat;
-        background-position: 10% 50%;
-        z-index: 1000;
-    }
-
-
-    .header__btn-menubar-mobile {
-        position: absolute;
-        top: 50px;
-        right: 50px;
-        background: transparent;
-        border: none;
-    }
-
-    .header__logo {
-        display: none;
-    }
-
-    /* Smoothies */
-    .smoothies {
-        padding: 0px 10px 0px 10px;
-    }
-
-    .smoothies__title {
-        margin-top: 30px;
-    }
-
-    .smoothies__text {
-        margin-bottom: 50px;
-    }
-
-    .smoothies__table {
-        margin-bottom: 50px;
-    }
-
-    .smoothies__cell {
-        width: 150px;
-    }
-
-    .smoothies__cell:nth-child(2n+1) {
-        border-right: 2px solid #f6edde;
-    }
-
-
-
-    .smoothies__text-cell {
-        text-align: center;
-        font-size: 18px;
-    }
-
-    /* About */
-
-    .about {
-        padding: 0;
-    }
-
-    .about__title {
-        text-align: center;
-        margin-bottom: 30px;
-        font-size: 28px;
-    }
-
-
-    .about__title-text::after {
-        display: block;
-        content: url(./assets/img/About/line_about.png);
-        position: absolute;
-        top: 30px;
-        left: -10px;
-        display: none;
-    }
-
-    .about__img {
-        display: none;
-    }
-
-    .about__content {
-        margin-left: 20px;
-        justify-content: center;
-    }
-
-    .about__list {
-        font-size: 1.4rem;
-
-    }
-
-    .about__btn {
-        font-size: 1.6rem;
-        margin: 0;
-    }
-
-    /*Products*/
-
-
-    .products {
-        overflow: auto;
-    }
-
-    .products__item {
-        display: flex;
-        flex: 0 0 40%;
-        padding: 50px 0;
-    }
-
-    .products__title {
-    }
-
-    .products__text {
-        font-size: 18px;
-    }
-
-    /*Our Story*/
-
-    .story {
-        padding-right: 10px;
-        padding-left: 10px;
-        padding-top: 30px;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    .story__content {
-        position: relative;
-    }
-
-    .story__img {
-        display: none;
-    }
-
-    .story__smoothie-img::before {
-        content: '';
-    }
-
-    .story__btn {
-        position: absolute;
-        top: 120%;
-        left: 50%;
-        transform: translateX(-50%);
-        -webkit-transform: translateX(-50%);
-        -moz-transform: translateX(-50%);
-        -ms-transform: translateX(-50%);
-        -o-transform: translateX(-50%);
-    }
-
-    .story__title {
-        text-align: center;
-    }
-
-    .story__text {
-        text-align: center;
-        margin: 0;
-    }
-
-    /*Testimonials*/
-
-    .testimonials {
-        padding: 20px 10px 0px 10px;
-    }
-
-    .testimonials__title {
-        margin-bottom: 50px;
-    }
-
-    .testimonials__feedback {
-        flex-direction: column-reverse;
-        justify-content: center;
-        margin-bottom: 0;
-    }
-
-    .testimonials__content {
-        margin-right: 0px;
-    }
-
-    .testimonials__quote {
-        text-align: center;
-
-    }
-
-    .testimonials__cite {
-        text-align: center;
-    }
-
-    .testimonials__img {
-        margin: 0;
-        padding: 0;
-    }
-
-    .testimonials__title::before {
-        position: absolute;
-        content: url(./assets/img/testimonials/dots_wit_corn.png);
-        display: inline-block;
-        top: -200px;
-        right: 58px;
-        display: none;
-    }
-
-    .testimonials__feedback::after {
-        display: none;
-    }
-
-
-    .testimonials__btns {
-        margin-bottom: 50px;
-        margin-top: 50px;
-    }
-
-    /*Our Blog*/
-
-    .blog {
-        padding: 0;
-        flex-direction: column;
-        padding-bottom: 40px;
-    }
-
-    .blog__left-block {
-        padding: 0;
-    }
-
-    .blog__title {
-        margin-top: 50px;
-    }
-
-    .blog__content {
-        flex-direction: column;
-        padding: 0px 10px 0px 10px;
-    }
-
-    .blog__article {
-        justify-content: center;
-        text-align: center;
-    }
-
-    .article__date {
-        align-self: start;
-        margin-left: 30px;
-    }
-
-    .blog__text {
-        margin: 0;
-    }
-
-    .blog__img {
-        display: none;
-    }
-
-    .blog__left-block::before {
-        content: '';
-    }
-
-    .blog__left-block::before {
-        display: none;
-    }
-
-    /*Instagram*/
-
-    .instagram-top {
-        align-items: center;
-        margin-bottom: 20px;
-        margin-top: 20px;
-    }
-
-    .instagram__content {
-        overflow: auto;
-    }
-
-    .instagram__link-post {
-        flex: 1 0 90%;
-    }
-
-    /*Footer*/
-
-    .footer-top {
-        flex-direction: column;
-        padding: 20px;
-    }
-
-
-    .footer-top__logo {
-        align-self: flex-start;
-        margin-bottom: 20px;
-    }
-
-
-    .footer-top__info-content {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        margin-bottom: 30px;
-    }
-
-
-
-    .footer-top__title {
-        align-self: flex-start;
-    }
-
-    .footer__markets-links {
-        margin-bottom: 30px;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .footer-top__link-appstore {
-        margin-bottom: 15px;
-    }
-
-
-
-    .footer__img-appstore {
-        max-width: 200px;
-    }
-
-
-    .footer__img-googleplay {
-        max-width: 200px;
-    }
-
-    .footer-top__payment {
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 30px;
-    }
-
-
-    .footer-top__email-input {
-        font-size: 1.4rem;
-        max-width: 500px;
-        width: 100%;
-    }
-
-    .footer-top__social-buttons {
-        justify-content: center;
-        position: relative;
-    }
-
-    .footer-top__btn {
-        font-size: 1.4em;
-    }
-
-    .footer-top__icons {
-        padding: 0;
-    }
-
-
-    .footer-top__social-item {
-        margin-right: 15px;
-    }
 
     .footer-top__btn::before {
         content: url(./assets/img/footer/down-arrow-footer.png);
@@ -979,8 +539,12 @@ li {
 
 
 
+
+
+
+
+
     .footer-copyright__content {
         display: none;
     }
-
 }

@@ -1,0 +1,52 @@
+// main: ../../main.less
+
+.story {
+    border: 1px solid red;
+    display: flex;
+    padding-left: 310px;
+    padding-top: 120px;
+    padding-bottom: 160px;
+    flex-wrap: wrap;
+    align-items: center;
+
+
+    &__content {
+        border: 1px solid red;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 511px;
+        width: 100%;
+    }
+
+    &__title {
+        border: 1px solid red;
+        margin-bottom: 45px;
+    }
+
+    &__text {
+        border: 1px solid red;
+        font-size: 1.8rem;
+        line-height: 35px;
+        margin-bottom: 60px;
+        font-family: 'MuliRegular';
+    }
+
+    &__btn {
+        width: 300px;
+        font-family: 'MuliExtraBold';
+        font-size: 2rem;
+    }
+
+    &__smoothie-img {
+        margin-left: 206px;
+        position: relative;
+    }
+
+    &__smoothie-img::before {
+        content: url(./assets/img/our_story/text_in_cloud.png);
+        position: absolute;
+        top: 22px;
+        left: -166px;
+    }
+}
