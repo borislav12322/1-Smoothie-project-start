@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./normalize_and_reset/normalize.css">
     <link rel="stylesheet" href="./main.min.css">
+    <link rel="stylesheet" href="./libraries/WOW-master/css/libs/animate.css">
     <!-- Сюда подключаем стили -->
 
     <title>Organic</title>
@@ -162,7 +163,7 @@
     <!--About-->
 
     <section class="about">
-        <img src="./assets/img/About/two_botles.png" alt="two bottles with smoothie" class="about__img">
+        <img src="./assets/img/About/two_botles.png" alt="two bottles with smoothie" class="wow slideInLeft about__img" data-wow-offset='500'>
         <div class="about__content">
             <h2 class="about__title title title--white">What makes Smoothie an
                 <span class="about__title-text title--green">awesome drink?</span>
@@ -449,6 +450,11 @@
             </div>
         </div>
     </footer>
+
+    <script src="./libraries/WOW-master/dist/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 </body>
 
 </html>

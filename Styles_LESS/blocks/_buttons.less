@@ -17,6 +17,7 @@
     padding-top: 20px;
     padding-bottom: 20px;
 
+
     &--orange-border {
         border: 2px solid #f8b231;
     }
@@ -28,5 +29,25 @@
     &--white-border {
         background-color: transparent;
         border: 2px solid #ffffff;
+}
+}
+
+.header__btn:hover {
+    animation: scale-up-center .4s cubic-bezier(.39, .575, .565, 1.000) both
+}
+
+@keyframes scale-up-center {
+    0% {
+        transform: scale(.5);
+    }
+
+    100% {
+        transform: scale(1);
     }
 }
+
+
+.btn--white-border:hover{
+    animation: scale-up-center .4s cubic-bezier(.39, .575, .565, 1.000) both
+}
+
